@@ -1,9 +1,12 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/Arknights-official-price-broad/',
+  base: '/',
   server: {
     open: true,
     port: 3000
+  },
+  build: {
+    outDir: 'dist'
   }
 })
