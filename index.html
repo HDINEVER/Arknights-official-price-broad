@@ -13,6 +13,7 @@
             background-color: #121212;
             color: #ffffff;
             overflow: hidden; /* 防止滚动,适配全屏 */
+            font-size: 22px;
         }
 
         /* 罗德岛黄 */
@@ -106,7 +107,8 @@
     </header>
 
     <!-- 主体内容区域 -->
-    <main class="flex-1 flex p-4 gap-4 overflow-hidden">
+    <main class="flex-1 flex flex-col overflow-hidden">
+        <div class="flex-1 flex p-4 gap-4 overflow-hidden">
         
         <!-- 左侧:推荐套餐 (高利润区) -->
         <section class="w-2/3 flex flex-col gap-3">
@@ -132,8 +134,8 @@
                         <div class="text-xs text-zinc-500 mt-1">+ 赠:色纸贴膜×2 + 免费打孔 + 磁吸服务</div>
                     </div>
                     <div class="text-right ml-4">
-                        <div class="text-3xl font-black text-white italic">¥58</div>
-                        <div class="text-xs text-zinc-500 line-through">原价 ¥85+</div>
+                        <div class="text-3xl font-black text-white italic">¥48</div>
+                        <div class="text-xs text-zinc-500 line-through">原价 ¥75+</div>
                     </div>
                 </div>
             </div>
@@ -148,14 +150,14 @@
                             <span class="text-xs text-zinc-500">ADVANCED BLIND BOX SUPPLY</span>
                         </div>
                         <div class="mt-2 text-white text-sm flex flex-wrap gap-x-4 gap-y-0.5">
-                            <span><span class="text-ak-cyan">●</span> 2×DIY吧唧<span class="text-xs text-zinc-400">(含覆膜)</span></span>
+                            <span><span class="text-ak-cyan">●</span> 3×DIY吧唧<span class="text-xs text-zinc-400">(含覆膜)</span></span>
                             <span><span class="text-ak-yellow">★</span> 1×<span class="font-bold border-b border-white">透明/特殊款</span>蚀刻章</span>
                             <span><span class="text-ak-yellow">★</span> 1×星环键帽<span class="text-xs text-zinc-400">(概率掉落错版)</span></span>
                         </div>
                         <div class="text-xs text-zinc-400 mt-1">+ 赠:色纸贴膜×3 + 免费打孔 + 背胶磁铁</div>
                     </div>
                     <div class="text-right ml-4">
-                        <div class="text-5xl font-black text-ak-yellow italic">¥88</div>
+                        <div class="text-5xl font-black text-ak-yellow italic">¥78</div>
                         <div class="text-xs text-zinc-400 mt-1">含隐藏款概率UP</div>
                     </div>
                 </div>
@@ -169,24 +171,28 @@
                         <span class="text-xs text-zinc-500">FULL ARMOR SET</span>
                     </div>
                     <div class="text-sm text-zinc-300 mt-1">
-                        4×吧唧 + 2×蚀刻章 + <span class="text-ak-cyan font-bold">2×幸运抽奖</span> + 1×键帽 + 全套增值服务
+                        5×吧唧 + 2×蚀刻章 + <span class="text-ak-cyan font-bold">2×幸运抽奖</span> + 1×键帽 + 全套增值服务
                     </div>
+                    <div class="text-xs text-zinc-400 mt-1">+ 赠送色纸×1</div>
                 </div>
                 <div class="text-right ml-4">
-                    <div class="text-3xl font-black text-white italic">¥158</div>
+                    <div class="text-3xl font-black text-white italic">¥148</div>
                 </div>
             </div>
 
              <!-- 套餐4 -->
-             <div class="bg-gradient-to-r from-zinc-900 to-zinc-800 border border-zinc-700 px-4 py-2 flex justify-between items-center">
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 bg-zinc-700 flex items-center justify-center text-xl">👑</div>
-                    <div>
-                        <h3 class="text-lg font-bold text-white">蚀刻章·全图鉴套装</h3>
-                        <p class="text-xs text-zinc-400">#01-#12 全套收藏 (限量5套)</p>
+             <div class="bg-gradient-to-r from-zinc-900 to-zinc-800 border border-zinc-700 px-4 py-2 relative">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-zinc-700 flex items-center justify-center text-xl">👑</div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white">蚀刻章·全图鉴套装</h3>
+                            <p class="text-xs text-zinc-400">#01-#12 全套收藏 (限量5套)</p>
+                            <p class="text-xs text-ak-yellow mt-0.5">+ 5×吧唧 + 赠送色纸×1</p>
+                        </div>
                     </div>
+                    <div class="text-2xl font-black text-ak-cyan italic">¥288</div>
                 </div>
-                <div class="text-2xl font-black text-ak-cyan italic">¥288</div>
             </div>
 
         </section>
@@ -204,11 +210,11 @@
                 <div class="border-b border-zinc-800 pb-3">
                     <div class="flex justify-between items-end">
                         <span class="font-bold text-lg">DIY干员信物 <span class="text-xs font-normal text-zinc-500">(吧唧)</span></span>
-                        <span class="text-xl font-bold text-ak-yellow">¥25</span>
+                        <span class="text-xl font-bold text-ak-yellow">¥15</span>
                     </div>
                     <div class="text-xs text-zinc-500 mt-1">自选覆膜 / 现场制作</div>
                     <div class="flex justify-end mt-1">
-                        <span class="bg-zinc-700 text-white text-xs px-2 py-0.5 rounded">特惠: 4个/¥75</span>
+                        <span class="bg-zinc-700 text-white text-xs px-2 py-0.5 rounded">特惠: 4个/¥50</span>
                     </div>
                 </div>
 
@@ -253,13 +259,15 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- 底部赠品提示 -->
-            <div class="mt-4 bg-zinc-800 p-3 border border-zinc-600 text-center">
-                <p class="text-xs text-zinc-400">凭漫展门票/游戏账号免费领取</p>
-                <p class="text-lg font-bold text-ak-yellow">战地影像底片 (DIY原材料)</p>
-            </div>
         </section>
+        </div>
+        
+        <!-- 底部赠品提示 - 横置放大 -->
+        <div class="bg-gradient-to-r from-zinc-900 via-zinc-800 to-zinc-900 border-t-2 border-ak-yellow px-8 py-4 flex items-center justify-center gap-6 shadow-[0_-4px_20px_rgba(252,211,77,0.2)]">
+            <p class="text-lg text-zinc-300 font-medium">凭漫展门票/游戏账号免费领取 →</p>
+            <p class="text-4xl font-black text-ak-yellow tracking-wider glitch-effect">战地影像底片</p>
+            <p class="text-xl text-zinc-400">(DIY原材料)</p>
+        </div>
     </main>
 
     <!-- 底部滚动通知 -->
