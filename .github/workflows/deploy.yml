@@ -22,11 +22,22 @@ jobs:
         with:
           node-version: '20'
 
+
+      - name: Check Node/NPM/Vite version
+        run: |
+          node -v
+          npm -v
+          npx vite --version
+
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build
-        run: npm run build
+        run: npx vite build
+
+      - name: List dist contents
+        run: |
+          ls -al dist || dir dist
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
